@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("div").click(function(){
+                    $(this).hide();
+                });
+            });
+        </script>
+
         <h1>Hello World</h1>
         <p>I'm hosted with GitHub Pages.</p>
+
+        <div>If you click on me I will disappear</div>
     </body>
 </html>
