@@ -14,5 +14,18 @@
         <p>I'm hosted with GitHub Pages.</p>
 
         <div>If you click on me I will disappear</div>
+
+        <p>Time : <span id="mytimer"></span></p>
+
+        <script>
+            var now = new Date();
+
+            function timer() {
+                var d = new Date();
+                document.getElementById("mytimer").innerHTML = Math.floor((d - now)/1000);
+            }
+
+            var t = setInterval(timer, 1000);
+        </script>
     </body>
 </html>
