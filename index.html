@@ -10,6 +10,9 @@
     <body>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="controller.js"></script>
 
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
@@ -42,5 +45,9 @@
 
             var t = setInterval(timer, 1000);
         </script>
+
+        <div ng-app="docsTimeDirective">
+          Current time is: <span my-timer></span>
+        </div>
     </body>
 </html>
